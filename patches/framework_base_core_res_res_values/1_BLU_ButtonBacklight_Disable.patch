@@ -1,0 +1,16 @@
+---
+
+diff --git a/core/res/res/values/cm_symbols.xml b/core/res/res/values/cm_symbols.xml
+index 8fd4d6f..96d6d9d 100644
+--- a/core/res/res/values/cm_symbols.xml
++++ b/core/res/res/values/cm_symbols.xml
+@@ -385,4 +385,8 @@
+ 
+     <!-- Wifi idle time default -->
+     <java-symbol type="integer" name="def_wifi_idle_ms" />
++    
++    <!-- BLU PURE XL Disable Button Backlight -->
++    <java-symbol type="integer" name="config_buttonBrightnessOverriddenEnabledValue" />
++    <java-symbol type="bool" name="config_buttonBrightnessForceConfigurable" />
+ </resources>
+ 

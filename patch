@@ -1,0 +1,33 @@
+#!/bin/bash
+cd frameworks/av
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_av/0001-libmedia-stub-out-MTK-specific-bits-audio-working.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_av/0002-camera.patch
+cd ../..
+cd frameworks/base
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0001-location-support-GNSS-extension-presumably-from-MTK.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0002-location-add-some-logs-just-to-be-confident.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0003-location-style-fix.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0004-NetworkMonitor-use-g.cn-for-connectivity-check.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0005-SystemUI-add-new-carrier-name-override-rule-for-Chin.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0006-add-com.mediatek-for-build.patch
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/framework_base/0007-Update-for-mtk.patch
+cd ../..
+cd frameworks/opt/telephony
+git apply -v ../../../device/BLU/BLU_PURE_XL/patches/framework_opt_telephony/0001-Update-for-mtk.patch
+cd ../../..
+cd packages/services/Telephony
+git apply -v ../../../device/BLU/BLU_PURE_XL/patches/packages_services_Telpheony/0001-Update-for-mtk.patch
+cd ../../..
+cd external/tinycompress
+git apply -v ../../device/BLU/BLU_PURE_XL/patches/external_tinycompress/64bit_tinycompress.patch
+cd ../..
+cd frameworks/base/core/res/res/values
+git apply -v ../../../../../../device/BLU/BLU_PURE_XL/patches/framework_base_core_res_res_values/1_BLU_ButtonBacklight_Disable.patch
+git apply -v ../../../../../../device/BLU/BLU_PURE_XL/patches/framework_base_core_res_res_values/2_BLU_ButtonBacklight_Disable.patch
+croot
+#source build/envsetup.sh
+#breakfast BLU_PURE_XL
+#mka bacon
+
+
+
