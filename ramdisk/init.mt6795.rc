@@ -20,6 +20,8 @@ on init
     chmod 0664 /proc/mtk_battery_cmd/current_cmd
     chmod 0664 /proc/mtk_battery_cmd/discharging_cmd
     chmod 0664 /proc/mtk_battery_cmd/battery_cmd
+    
+    export LD_PRELOAD /system/lib/libxlog.so
 
     export USBOTG_STORAGE /storage/usbotg
 # Gionee chuqf modify for CR01411592 begin
