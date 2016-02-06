@@ -1,5 +1,3 @@
----
-
 diff --git a/core/res/res/values/cm_symbols.xml b/core/res/res/values/cm_symbols.xml
 index 8fd4d6f..96d6d9d 100644
 --- a/core/res/res/values/cm_symbols.xml
@@ -8,9 +6,37 @@ index 8fd4d6f..96d6d9d 100644
  
      <!-- Wifi idle time default -->
      <java-symbol type="integer" name="def_wifi_idle_ms" />
-+    
++
 +    <!-- BLU PURE XL Disable Button Backlight -->
 +    <java-symbol type="integer" name="config_buttonBrightnessOverriddenEnabledValue" />
 +    <java-symbol type="bool" name="config_buttonBrightnessForceConfigurable" />
  </resources>
+diff --git a/core/res/res/values/config.xml b/core/res/res/values/config.xml
+index 31ad7aa..2cbe1a5 100755
+--- a/core/res/res/values/config.xml
++++ b/core/res/res/values/config.xml
+@@ -2181,6 +2181,7 @@
+         <item>CHINA\u0020\u0020MOBILE</item>
+         <item>CMCC</item>
+         <item>CHN-UNICOM</item>
++        <item>UNICOM</item>
+         <item>China Mobile</item>
+         <item>China Unicom</item>
+         <item>China Telecom</item>
+@@ -2197,6 +2198,7 @@
+         <item>China_Mobile</item>
+         <item>China_Mobile</item>
+         <item>China_Unicom</item>
++        <item>China_Unicom</item>
+         <item>China_Mobile</item>
+         <item>China_Unicom</item>
+         <item>China_Telecom</item>
+@@ -2420,4 +2422,8 @@
  
+     <!-- Show WiFi activity indicators on signal bar -->
+     <bool name="config_showWifiActivityIndicators">true</bool>
++
++    <!-- BLU PURE XL Disable Button Backlight -->
++    <integer name="config_buttonBrightnessOverriddenEnabledValue">255</integer>
++    <bool name="config_buttonBrightnessForceConfigurable">true</bool>
+ </resources>

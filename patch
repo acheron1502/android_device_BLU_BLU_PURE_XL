@@ -23,7 +23,7 @@ git apply -v ../../device/BLU/BLU_PURE_XL/patches/external_tinycompress/64bit_ti
 cd ../..
 cd frameworks/base/core/res/res/values
 git apply -v ../../../../../../device/BLU/BLU_PURE_XL/patches/framework_base_core_res_res_values/1_BLU_ButtonBacklight_Disable.patch
-git apply -v ../../../../../../device/BLU/BLU_PURE_XL/patches/framework_base_core_res_res_values/2_BLU_ButtonBacklight_Disable.patch
+#git apply -v ../../../../../../device/BLU/BLU_PURE_XL/patches/framework_base_core_res_res_values/2_BLU_ButtonBacklight_Disable.patch
 croot
 #source build/envsetup.sh
 #breakfast BLU_PURE_XL
